@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    </head>
+    <body>
+        <!-- Return to Google Main Page -->
+        <form action="index.html" class = "right">
+            <button type="submit" class="button">Google Search</button>
+        </form>
+
+        <!-- Advanced Search -->
+        <!-- Parameters found at https://moz.com/blog/the-ultimate-guide-to-the-google-search-parameters -->
+        <h1>Find pages with</h1>
+        <form action="https://google.com/search" class = "advanced_search">
+
+            <!-- Normal Query Search -->
+            <div>
+                all these words
+                <input type="text" name="q"> 
+            </div>
+
+            <!-- Exact keywords -->
+            <div>
+                this exact word or phrase 
+                <input type="text" name="as_epq">
+            </div>
+
+            <!-- Keywords -->
+            <div>
+                any of these words
+                <input type="text" name="as_oq">
+            </div>
+
+            <!-- Exception search -->
+            <div>
+                none of these words
+                <input type="text" name="as_eq">
+            </div>
+            <input type="submit" value="Advanced Search" id = "advanced">
+        </form>
+    </body>
+</html>
